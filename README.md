@@ -103,7 +103,8 @@ lib/
 
 ## 🖼️ Output/Tampilan Aplikasi
 
-![Screenshot 1](assets/Image1.jpg)
-![Screenshot 2](assets/Image2.jpg)
+| Halaman Form Input | Hasil Tampilan Data |
+|-------------------|-------------------|
+| ![Form Input](assets/Image1.jpg) | ![Hasil Tampilan](assets/Image2.jpg) |
 
 
