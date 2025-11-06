@@ -99,3 +99,11 @@ lib/
 └── ui/
     ├── form_data.dart    # Halaman input data (FormData)
     └── tampil_data.dart  # Halaman menampilkan data hasil input (TampilData)
+```
+
+## 🖼️ Output/Tampilan Aplikasi
+
+![Screenshot 1](assets/Image1.jpg)
+![Screenshot 2](assets/Image2.jpg)
+
+
