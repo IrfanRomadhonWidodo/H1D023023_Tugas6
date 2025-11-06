@@ -1,5 +1,4 @@
 # 📱 H1D023023_Tugas6  
-_Proyek Flutter Tugas ke-6_
 
 ---
 
@@ -29,3 +28,74 @@ Aplikasi ini menampilkan **form input data** yang diisi oleh pengguna, kemudian 
 3. **Jalankan aplikasi**
    ```bash
    flutter run
+
+---
+
+## 🔄 Proses Passing Data dari Form Menuju Tampilan
+
+Mekanisme utama pengiriman data dilakukan menggunakan **Constructor Parameter** saat berpindah halaman dengan `Navigator`.
+
+### 1️⃣ Input Data pada Form
+
+Pengguna mengisi data pada halaman form (`FormData`) menggunakan widget `TextFormField` yang dikontrol oleh `TextEditingController`.
+
+```dart
+final namaController = TextEditingController();
+// Digunakan di: TextFormField(controller: _namaController, ...)
+```
+### 2️⃣ Mengambil Nilai Input
+
+Ketika tombol submit ditekan, data diambil dari controller dan disimpan dalam variabel untuk diproses.
+
+```dart
+String nama = _namaController.text;
+String nim = _nimController.text;
+String tahunLahir = _tahunLahirController.text;
+```
+### 3️⃣ Navigasi ke Halaman Tampilan
+
+Aplikasi berpindah ke halaman lain (TampilData) sambil mengirim data tersebut melalui argumen konstruktor di dalam MaterialPageRoute.
+
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (context) => TampilData(
+      nama: nama, 
+      nim: nim,
+      tahunLahir: tahunLahir,
+    ),
+  ),
+);
+```
+### 4️⃣ Menerima Data di Halaman Tujuan
+
+Halaman TampilData menerima data melalui constructor-nya dan menyimpannya dalam variabel final untuk ditampilkan.
+
+```dart
+class TampilData extends StatelessWidget {
+  final String nama;
+  // ... dan variabel lainnya
+
+  const TampilData({required this.nama, required this.nim, required this.tahunLahir});
+
+  @override
+  Widget build(BuildContext context) {
+    // Digunakan untuk menampilkan atau memproses:
+    // child: Text('Halo, $nama'),
+  }
+}
+```
+### 5️⃣ Menampilkan Hasil
+
+Nilai yang dikirim dari halaman form akan muncul di halaman tampilan (TampilData), menandakan bahwa proses passing data berhasil dilakukan.
+
+## 📂 Struktur Folder (Singkat)
+
+```bash
+lib/
+│
+├── main.dart             # Entry point aplikasi
+└── ui/
+    ├── form_data.dart    # Halaman input data (FormData)
+    └── tampil_data.dart  # Halaman menampilkan data hasil input (TampilData)
