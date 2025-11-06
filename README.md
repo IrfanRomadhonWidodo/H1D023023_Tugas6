@@ -1,16 +1,31 @@
-# h1d023023_tugas6
+# 📱 H1D023023_Tugas6  
+_Proyek Flutter Tugas ke-6_
 
-A new Flutter project.
+---
 
-## Getting Started
+## 🧩 Deskripsi  
+Proyek ini dibuat menggunakan **Flutter** untuk memenuhi tugas ke-6.  
+Aplikasi ini menampilkan **form input data** yang diisi oleh pengguna, kemudian data tersebut dikirim (passing data) menuju halaman **tampilan hasil** untuk ditampilkan kembali di layar.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Teknologi yang Digunakan  
+- **Flutter & Dart**  
+- (Tambahkan dependency yang digunakan di `pubspec.yaml`)  
+- **Versi Flutter:** _(isi versi)_  
+- **Platform Target:** Android / iOS  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Cara Menjalankan Aplikasi  
+
+1. **Clone repositori**
+   ```bash
+   git clone https://github.com/IrfanRomadhonWidodo/H1D023023_Tugas6.git
+   cd H1D023023_Tugas6
+2. **Instal dependencies**
+   ```bash
+   flutter pub get
+3. **Jalankan aplikasi**
+   ```bash
+   flutter run
