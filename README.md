@@ -111,4 +111,8 @@ lib/
 |-------------------|-------------------|
 | ![Form Input](assets/Image1.jpg) | ![Hasil Tampilan](assets/Image2.jpg) |
 
+## 🎬 Demo Aplikasi
+
+![Demo Aplikasi](assets/Demo.gif)
+
 
