@@ -1,6 +1,10 @@
 # 📱 H1D023023_Tugas6  
 
 ---
+## Identitas
+Nama  : Irfan Romadhon Widodo  
+NIM   : H1D023023  
+Shift : Shift D (Lama), Shift F (Baru)  
 
 ## 🧩 Deskripsi  
 Proyek ini dibuat menggunakan **Flutter** untuk memenuhi tugas ke-6.  
